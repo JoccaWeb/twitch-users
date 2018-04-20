@@ -28,15 +28,15 @@ $(document).ready (function() {
 	$.getJSON('https://wind-bow.glitch.me/twitch-api/streams/' + val, function(st) {
 			// see the JSON data by filling in the complete url in an extra browsertab to have an overview of the parameters
 			
-			// Check channels with no streams
-			if (st.stream == null) {
+		// Check channels with no streams
+		if (st.stream == null) {
+			
+			$.getJSON('https://wind-bow.glitch.me/twitch-api/channels/' + val, function (ch) {
 				
-				$.getJSON('https://wind-bow.glitch.me/twitch-api/channels/' + val, function (ch) {
-					
-					if (ch.status == '404') {
+				if (ch.status == '404') {
 						
-						// no user, so channel offline anyway, no picture
-						$('#nonExData').append(
+					// no user, so channel offline anyway, no picture
+					$('#nonExData').append(
 							'<div class="row"><div class="col-xs-2">' +
 							'<img class="img-thumbnail img-circle" width="75px" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg">' + 
 							'</div><div class="col-xs-5 chn-name">' + channelList[i] + 
