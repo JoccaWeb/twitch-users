@@ -1,4 +1,4 @@
-// open jQuery
+// jQuery
 $(document).ready (function() {	
 	
 	$('#off').click(function() {
