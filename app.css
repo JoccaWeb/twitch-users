@@ -1,0 +1,44 @@
+.container {
+	background: #6441a5;
+	color: white
+}
+.center-down {
+	text-align: center;
+	margin-top: 40px
+}
+.under-space {
+	margin-bottom: 30px;
+	font-size: 20px
+}
+a:link {    /* unvisited link */
+    color: #b49be0;
+    text-decoration: none;
+}
+a:visited {    /* visited link */
+    color: #b49be0;
+}
+a:hover {    /* mouse over link */
+    color: #fff;
+    text-decoration: none;
+}
+a:active {    /* active link */
+    color: #fff;
+}
+.chn-name {
+	font-size: 1.3em;
+	padding-top: 25px
+}
+.type-color {
+	color: #b49be0;
+}
+.btn.sharp {
+  border-radius: 0;
+}
+.btn-primary { 
+	border-color: #fff; 
+	background-color: #b49be0;
+}
+.btn-primary:hover {
+	background-color: #6441a5;
+	border-color: #fff; 
+}
