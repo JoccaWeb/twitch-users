@@ -1,5 +1,5 @@
 // open jQuery
-$(document).ready (function() {
+$(document).ready (function() {	
 	
 	$('#off').click(function() {
 		// alert('Click handler for off button called')
@@ -24,8 +24,8 @@ $(document).ready (function() {
 
 	$.each(channelList, function(i, val) {		
 		
-		// Check streams of users in channelList array to see who is online and offline, then divide in online, offline and non-existing
-		$.getJSON('https://wind-bow.glitch.me/twitch-api/streams/' + val, function(st) {
+	// Check streams of users in channelList array to see who is online and offline, then divide in online, offline and non-existing
+	$.getJSON('https://wind-bow.glitch.me/twitch-api/streams/' + val, function(st) {
 			// see the JSON data by filling in the complete url in an extra browsertab to have an overview of the parameters
 			
 			// Check channels with no streams
